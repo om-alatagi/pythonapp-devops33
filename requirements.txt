@@ -1,3 +1,4 @@
 flask==2.0.1
 pytest
 Werkzeug==2.0.0
+flake8
