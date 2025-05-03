@@ -38,6 +38,10 @@ jobs:
       run: |
         pytest --cov=app --cov-report=xml:coverage.xml
         cat coverage.xml
+    - name: Upload Coverage Report to Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage.xml
 
   sonarqube-scanner:
     name: Build and analyze With SonarQube
