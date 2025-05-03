@@ -39,7 +39,7 @@ jobs:
         pytest --cov=app --cov-report=xml:coverage.xml
         cat coverage.xml
     - name: Upload Coverage Report to Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: coverage.xml
 
