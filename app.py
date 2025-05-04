@@ -12,6 +12,13 @@ def create_app():
     @app.route('/test')
     def test():
         return 'Hi Sudhanshu test'
+    @app.route('/test1')
+    def test():
+        return 'Hi Sudhanshu test1'
+    @app.route('/test2')
+    def test():
+        x=10
+        return 'Hi Sudhanshu test2'
 
     return app
 
