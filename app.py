@@ -12,14 +12,7 @@ def create_app():
     @app.route('/test')
     def test():
         return 'Hi Sudhanshu test'
-    @app.route('/test1')
-    def test1():
-        return 'Hi Sudhanshu test1'
-    @app.route('/test2')
-    def test2():
-        x=10
-        return 'Hi Sudhanshu test2'
-
+        
     return app
 
 
