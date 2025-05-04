@@ -81,7 +81,7 @@ jobs: #A set of jobs (collection of jobs == pipeline) that will be run as part o
   dockerbuildImage:
     name: Build Docker Image
     runs-on: ubuntu-latest
-    needs: [build]
+    needs: [build, sonarqube-scanner ]
     
     steps:
       -
