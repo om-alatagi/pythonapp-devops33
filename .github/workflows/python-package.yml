@@ -19,7 +19,7 @@ jobs: #A set of jobs (collection of jobs == pipeline) that will be run as part o
         python-version: ["3.11"]
 
     steps: # A set of steps to be run as part of the job
-    - run: actions/checkout@v4 # action - pre-created code for common tasks
+    - uses: actions/checkout@v4 # action - pre-created code for common tasks
       with:
         fetch-depth: 0  # Shallow clones should be
     - name: Set up Python ${{ matrix.python-version }}
